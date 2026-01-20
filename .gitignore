@@ -1,9 +1,12 @@
-@"
-.env
+.venv/
 __pycache__/
 *.pyc
+.env
 data/
 logs/
-.dbt/
-target/
-"@ | Out-File .gitignore -Encoding utf8
+init_setup.sh
+*.session
+dbt/logs
+dbt/medical_warehouse/logs
+dbt/medical_warehouse/target
+src/medi_tg_analytics.egg-info/
