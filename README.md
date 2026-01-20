@@ -158,21 +158,25 @@ Telegram Channels
 ## Pipeline & Processing Steps
 
 1. **Data Scraping (Extract & Load)**
+
    - Telethon extracts messages and media
    - Raw JSON saved by channel/date in `data/raw/telegram_messages`
    - Images downloaded to `data/raw/images/{channel_name}/{message_id}.jpg`
 
 2. **Data Warehouse (Transform)**
+
    - Raw JSON loaded to PostgreSQL (`raw.telegram_messages`)
    - dbt staging models clean, normalize, and cast data types
    - Dimensional star schema with: `dim_channels`, `dim_dates`, `fct_messages`, `fct_image_detections`
 
 3. **Data Enrichment**
+
    - YOLOv8 detects objects in images
    - Categorizes images (promotional, product_display, lifestyle, other)
    - Results joined to `fct_messages` for enriched analytics
 
 4. **Analytical API**
+
    - FastAPI exposes endpoints:
      - `/api/reports/top-products`
      - `/api/channels/{channel_name}/activity`
@@ -257,3 +261,7 @@ scripts/run_api.sh
 - Pytest for testing
 
 ---
+
+## Author
+
+Tibebu Kaleb – Full-stack AI/ML engineer experienced in data pipelines, NLP, RAG, CV, and analytical API development
