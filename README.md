@@ -260,8 +260,4 @@ scripts/run_api.sh
 - Telethon for Telegram scraping
 - Pytest for testing
 
----
 
-## Author
-
-Tibebu Kaleb – Full-stack AI/ML engineer experienced in data pipelines, NLP, RAG, CV, and analytical API development
