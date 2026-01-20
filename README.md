@@ -70,7 +70,6 @@ Key business questions addressed:
 - CheMed Telegram Channel – Medical products
 - Lobelia Cosmetics – Cosmetics & health products
 - Tikvah Pharma – Pharmaceuticals
-- Additional channels from [et.tgstat.com/medicine](https://et.tgstat.com/medicine)
 
 **Data Fields Collected:**
 
@@ -259,9 +258,3 @@ scripts/run_api.sh
 - Docker & docker-compose for reproducible environment
 - Telethon for Telegram scraping
 - Pytest for testing
-
----
-
-## Author
-
-Tibebu Kaleb – Full-stack AI/ML engineer experienced in data pipelines, NLP, RAG, CV, and analytical API development
