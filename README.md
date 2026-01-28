@@ -1,4 +1,4 @@
-# Medical Telegram Analytics
+
 ## Shipping a Data Product: From Raw Telegram Data to an Analytical API
 
 An end-to-end data platform for analyzing Ethiopian medical and pharmaceutical content on Telegram.  
